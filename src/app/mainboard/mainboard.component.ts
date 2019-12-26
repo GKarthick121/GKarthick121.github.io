@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { slideInOutAnimation } from '../route-animations';
 
 @Component({
   selector: 'app-mainboard',
   templateUrl: './mainboard.component.html',
-  styleUrls: ['./mainboard.component.scss']
+  styleUrls: ['./mainboard.component.scss'],
+  animations:[slideInOutAnimation],
+  host:{'[@slideInOutAnimation]': '' }
 })
 export class MainboardComponent implements OnInit {
 
