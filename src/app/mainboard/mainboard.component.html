@@ -1,8 +1,8 @@
 <!--Status of player, winner and game-->
 
 <div class="headProperty">
-    <h3 *ngIf="!resultIs &&!tieGame">Player : {{playerName}}</h3>
-    <h2 *ngIf="resultIs"> Winner : Player {{winnerName}}! </h2>
+    <h3 *ngIf="!resultIs && !tieGame">Player : {{playerName}}</h3>
+    <h2 *ngIf="resultIs">Player {{winnerName}} wins </h2>
     <h2 *ngIf="tieGame">Game is draw!</h2>
 </div>
 
