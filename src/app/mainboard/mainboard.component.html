@@ -4,7 +4,7 @@
     <img *ngIf="!resultIs && !tieGame" class=" img2 rounded-circle" src="./assets/Image/avator2 .png" hspace="20" width="5%" height=auto [ngClass]="{'border border-warning':!plName}">
 </div>
 
-<!-- Card -->
+<!-- Card display when the game ends-->
 <section class="cardBox" *ngIf="resultIs || tieGame">
     <div class="container flex-center">
         <div class="row pt-30 mt-25 w-100">
@@ -22,7 +22,7 @@
     </div>
 </section>
 
-<!-- PlayBoard -->
+<!--Display PlayBoard when game is on -->
 
 <main *ngIf="!resultIs && !tieGame ">
     <app-tboard *ngFor="let val of playBoard; let i=index " [value]="val " (click)="enterVal(i) ">
